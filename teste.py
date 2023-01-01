@@ -1,3 +1,5 @@
+import teste2
+
 def get_operation():
     op = input('operacao:')
     return op
@@ -8,9 +10,10 @@ def gather_data():
     op = get_operation()
     return n1, n2, op
 
-def maine(n1, n2, op):
-    print(eval(n1+op+n2))
+def maine(n1, n2):
+    print(n1*n2)
     return None
 
 if __name__ == '__main__':
+    gather_data()
     maine()
